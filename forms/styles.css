@@ -64,6 +64,25 @@
     margin-bottom: 15px;
   }
 
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;  /* By default, many browsers let the user resize <textarea> elements to whatever dimensions they want. We disabled this here with the resize property. */
+  }
+
+  .form-row .instructions {
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
   @media only screen and (min-width: 700px) {
     .speaker-form-header,
     .speaker-form {
@@ -99,6 +118,16 @@
       .legacy-form-row legend {
         float: left;
       }
+    .form-row .instructions {
+      margin-left: 120px;
+    }
+    .form-row .checkbox-label {
+      margin-left: 120px;
+      width: auto;
+    }
+    .form-row button {
+      margin-left: 120px;
+    }
   }
 
 .form-row input[type='text']:invalid,
@@ -131,8 +160,36 @@
   .legacy-form-row input[type='radio'] {
     float: left;
   }
+
   .form-row select {
     padding: 5px;
     font-size: 14px;            /* This won't work in Chrome or Safari */
     -webkit-appearance: none;   /* This will make it work */
   }
+
+  .form-row .checkbox-label {
+    margin-bottom: 0;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: #5995DA;
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  .form-row button:hover {
+    background-color: #76AEED;
+  }
+  
+  .form-row button:active {
+    background-color: #407FC7;
+  }
+  
